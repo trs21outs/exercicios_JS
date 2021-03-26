@@ -1,27 +1,27 @@
 
-var n1 = ;
-var n2 = ;
-var key = ;
+var value1 = ;
+var value2 = ;
+var operation = ;
 var l = console.log;
 
-switch (key) {
+switch (operation) {
     case "+":
-        var result = n1 + n2;
+        var result = value1 + value2;
         l(result);
         break;
     
     case "-":
-        var result = n1 - n2;
+        var result = value1 - value2;
         l(result);
         break;
 
     case "*":
-       var result = n1 * n2;
+       var result = value1 * value2;
        l(result);
        break;
 
     case "/":
-        var result = n1 / n2;
+        var result = value1 / value2;
         l(result);
        break;
     
