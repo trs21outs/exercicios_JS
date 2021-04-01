@@ -2,6 +2,10 @@
 //return Array.from(String(n), Number).reverse(); ->otimizado!!!
 
 
+matrix = Array.from(String(n), Number)
+    return matrix.reverse()
+
+
 let args =[800,546,2,63,99,45]
 function comparaNumeros(a,b) { 
     if (a == b) {

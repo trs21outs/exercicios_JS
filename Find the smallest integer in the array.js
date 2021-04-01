@@ -1,9 +1,12 @@
+function organizador(a,b){
+    return (a-b)
+  }
 
-
-function procuraMenor(n){
-    matrix = Array.from(String(n), Number)
-    return matrix.reverse()
+class SmallestIntegerFinder {
+  
+  findSmallestInt(args) {
+   args.sort(organizador)
+    return args[0]
+    
+  }
 }
-let num = inverte(987654321)
-
-console.log(`${num}`)
