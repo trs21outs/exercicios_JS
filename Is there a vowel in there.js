@@ -88,35 +88,49 @@ return n2
 =============================================================
 */
 
-/*
-([118,117,120,121,117,98,122,97,120,106,104,116,113,114,113,120,106],[118,"u",120,121,"u",98,122,"a",120,106,104,116,113,114,113,120,106]);
-([101,121,110,113,113,103,121,121,101,107,103],["e",121,110,113,113,103,121,121,"e",107,103]);
-*/
-
-let array = [118,117,120,121,117,98,122,97,120,106,104,116,113,114,113,120,106]
-let vogais = ["a","e","i","o","u"]
-
 
 
 /**resolução do github*/
-const isVow = a =>
+/*const isVow = a =>
   a.map(
     charCode =>
       /[aeiou]/.test(String.fromCharCode(charCode))
         ? String.fromCharCode(charCode)
         : charCode
   )
+*/
 
+/*
+([118,117,120,121,117,98,122,97,120,106,104,116,113,114,113,120,106],[118,"u",120,121,"u",98,122,"a",120,106,104,116,113,114,113,120,106]);
+([101,121,110,113,113,103,121,121,101,107,103],["e",121,110,113,113,103,121,121,"e",107,103]);
+*/
 
+const array = ["e",121,110,113,113,103,121,121,"e",107,103]
+const vogais = ["a","e","i","o","u"]
 
+function organizador(n){
 
+const n1 = n.filter(item => typeof item  === 'string' )
+const n2 = n1.join('')
 
+const n3 = String.fromCharCode.apply(this, n)
+const res = n2+n3
+const vowelList = ["a","e","i","o","u"]
+const vowelsCount = 0;
+const resolv = []
 
+ for(var i = 0; i < res.length ; i++)
+  {
+    if (vowelList.indexOf(resolv[i]) !== -1)
+    {
+      vowelsCount += 1;
+    }
+  }
+  return vowelsCount;
 
+}
 
-
-
-
+console.log(` ${organizador(array)} `)
 
 
 
