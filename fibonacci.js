@@ -1,10 +1,10 @@
-let n1 = 10
+let n1 = 530
 
-function fib(n){
+function fibonacci(n){
     let a=1,b=1;
     while(--n)
     a=b+(b=a);
     return b;
 }
 
-console.log(fib(n1))
+console.log(fibonacci(n1))

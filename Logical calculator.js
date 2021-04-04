@@ -22,17 +22,17 @@ console.log(`${booleanos(b)}`)*/
 
 function calcBool(array,op){
     if (op === "AND"){
-        return array[0] && array[1] && array[2] && array[3]
+        return array[0] && array[1] && array[2]
     } 
     
     else if (op === "OR"){
-        return array[0] || array[1] || array[2] || array[3]
+        return array[0] || array[1] || array[2]
     } 
     
-    else if (op === "XOR")
+    else if (op === "NOT")
     {
-        xor = array[0] ^ array[1] ^ array[2] ^ array[3]
-        if (xor === 0){
+        not = ! (array[0], array[1] , array[2])
+        if (not === 0){
             return false
         }else{
             return true
@@ -42,11 +42,11 @@ function calcBool(array,op){
     }
 
 
-let booleanos = [false,false,false,false]
+let booleanos = [true,true,true]
 
 //let operador = "AND"
 //let operador = "OR"
-let operador = "XOR"
+let operador = "NOT"
 
 console.log(`${calcBool(booleanos,operador)}`)
 
